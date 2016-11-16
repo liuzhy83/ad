@@ -1,0 +1,605 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
+        font-family: "微软雅黑";
+
+        /*font-size: 12px;*/
+        font-size: 100px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        /*font-size: 12px;*/
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+   /*第一个页面上的下面第一行字*/
+   @-webkit-keyframes text1-fly{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateX(-0.5rem);
+	}
+	25%{
+		opacity: 1;
+		-webkit-transform: translateX(0rem);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateX(0rem);
+	}
+}
+/*第一个页面上的下面第二行字*/
+@-webkit-keyframes text2-fly{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateX(0.5rem);
+	}
+	25%{
+		opacity: 1;
+		-webkit-transform: translateX(0rem);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateX(0rem);
+	}
+}
+@-webkit-keyframes text2{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateY(1rem);
+	}
+	50%{
+		opacity: 0;
+		-webkit-transform: translateY(1rem);
+	}
+	65%{
+		opacity: 1;
+		-webkit-transform: translateY(0rem);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateY(0rem);
+	}
+}
+@-webkit-keyframes text2-f2{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateY(1rem);
+	}
+	65%{
+		opacity: 0;
+		-webkit-transform: translateY(1rem);
+	}
+	80%{
+		opacity: 1;
+		-webkit-transform: translateY(0rem);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateY(0rem);
+	}
+}
+/*向上滑动的*/
+@-webkit-keyframes next-fly{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateY(2rem);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateY(0rem);
+	}
+}
+
+
+.text{
+	width: 4.34rem;
+	height: 2.63rem;
+	position: absolute;
+	bottom: 1.1rem;
+	left: 0.9rem;
+}
+.text span{
+	display: block;
+	text-align: center;
+	font-size: 0.35rem;
+	color: #6a6b6a;
+	margin-top: 0.5rem;
+}
+.text p,.text5 p{
+	text-align: center;
+	font-size:0.5rem;
+	color: #141414;
+}
+
+.next{
+	text-align: center;
+	display: block;
+	width: 0.85rem;
+	height: 0.46rem;
+	margin-top: 0.59rem;
+	margin-left: 1.73rem;
+	-webkit-animation: next-fly 1.5s infinite;
+}
+
+/*第一页*/
+.logo{
+	width: 2.84rem;
+	height: 2.84rem;
+	position: absolute;
+	top: 1.2rem;
+	left: 1.6rem;
+	opacity: 0;
+}
+.ind1 .logo{
+	-webkit-animation: pao1_move 5s forwards;
+}
+.logo img{
+	width: 2.84rem;
+	height: 2.84rem;
+}
+.text1 p{
+	opacity: 0;
+}
+.ind1 .text1 p{
+	-webkit-animation: text1-fly 4s forwards;
+}
+.text1 span{
+	opacity: 0;
+}
+.ind1 .text1 span{
+	-webkit-animation: text2-fly 4s forwards;
+}
+
+
+/*第二个页面的样式设计*/
+@-webkit-keyframes logo-move{
+	0%{
+		opacity: 0;
+		/*top: 0rem;*/
+	}
+	70%{
+		opacity: 1;
+		top: 3rem;
+	}
+	100%{
+		opacity: 1;
+		top: 2.1rem;
+
+	}
+}
+.logo2{
+	width: 4.76rem;
+	height: 4.37rem;
+	background: url(../images/bg2.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: 1.2rem;
+	left: 0.72rem;
+}
+@-webkit-keyframes pao1_move{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.pao1{
+	width: 0.76rem;
+	height: 1rem;
+	position: absolute;
+	top: 0.51rem;
+	left: 1.6rem;
+	opacity: 0;
+}
+.ind2 .pao1{
+	-webkit-animation: pao1_move 2s infinite;
+}
+.pao2{
+	width: 0.6rem;
+	height: 0.8rem;
+	position: absolute;
+	left: 0.597rem;
+	top: 2.19rem;
+	opacity: 0;
+}
+.ind2 .pao2{
+	-webkit-animation: pao1_move 2s linear infinite;
+}
+.pao3{
+	width: 0.512rem;
+	height: 0.67rem;
+	position: absolute;
+	top: 1.52rem;
+	right: 0.62rem;
+	opacity: 0;
+}
+.ind2 .pao3{
+	-webkit-animation: pao1_move 2s linear infinite;
+}
+.phone{
+	width: 2.0rem;
+	height: 1.91rem;
+	position: absolute;
+	bottom: 0;
+	left: 1.4rem;
+	opacity: 0;
+
+}
+.ind2 .phone{
+	-webkit-animation: text2 2s forwards;
+
+}
+.phone-m{
+	width: 0.81rem;
+	height: 0.81rem;
+	position: absolute;
+	right: 1.11rem;
+	bottom: 0.65rem;
+	opacity: 0;
+}
+.ind2 .phone-m{
+	-webkit-animation: text1-fly 2s forwards;
+	-webkit-animation-delay: 2s;
+}
+.text2 p{
+	opacity: 0;
+}
+.ind2 .text2 p{
+	-webkit-animation: text2 2s forwards;
+	-webkit-animation-delay: 0.5s;
+}
+.text2 span{
+	opacity: 0;
+}
+.ind2 .text2 span{
+	-webkit-animation: text2-f2 2s forwards;
+	-webkit-animation-delay: 1s;
+}
+
+/*第三页样式设计*/
+.logo3{
+	width: 4.76rem;
+	height: 4.37rem;
+	background: url(../images/bg3.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: 1.2rem;
+	left: 0.72rem;
+}
+
+@-webkit-keyframes chou_chu{
+	0%{
+		opacity: 0;
+		width: 1.5rem;
+		height: 1.5rem;
+		top: 2.5rem;
+		left: 0.8rem;
+	}
+	100%{
+		opacity: 1;
+		width: 2.12rem;
+		height: 2.18rem;
+		top: 2.2rem;
+		left: 1.38rem;
+	}
+}
+.chouti{
+	width: 2.12rem;
+	height: 2.18rem;
+	position: absolute;
+	top: 2.2rem;
+	left: 1.38rem;
+	opacity: 0;
+
+}
+.ind3 .chouti{
+	-webkit-animation: chou_chu 0.5s linear forwards;
+}
+.phone3{
+	width: 2.69rem;
+	height: 3.27rem;
+	position: absolute;
+	top: 1.1rem;
+	left: 1.11rem;
+	opacity: 0;
+
+}
+.ind3 .phone3{
+	-webkit-animation: text2 2s forwards;
+}
+
+.text3 p{
+	opacity: 0;
+}
+.ind3 .text3 p{
+	-webkit-animation: text2 1s forwards;
+	-webkit-animation-delay: 1s;
+}
+.text3 span{
+	opacity: 0;
+}
+.ind3 .text3 span{
+	-webkit-animation: text2-f2 1s forwards;
+	-webkit-animation-delay: 1.5s;
+}
+/*第四页样式设计*/
+.logo4{
+	width: 4.76rem;
+	height: 4.37rem;
+	background: url(../images/bg4.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: 1.2rem;
+	left: 0.72rem;
+}
+.scicle{
+	width: 1.57rem;
+	height: 1.58rem;
+	position: absolute;
+	top: 1.4rem;
+	left: 1.65rem;
+	opacity: 0;
+}
+.ind4 .scicle{
+	-webkit-animation: pao1_move 1s forwards;
+}
+.lcicle{
+	width: 3.18rem;
+	height: 3.15rem;
+	position: absolute;
+	top:0.6rem;
+	left:0.85rem;
+	opacity: 0;
+}
+.ind4 .lcicle{
+	-webkit-animation: pao1_move 1s forwards;
+	-webkit-animation-delay: 0.5s;
+
+}
+.heal{
+	width: 0.8rem;
+	height: 0.8rem;
+	position: absolute;
+	top: 2.02rem;
+	left: 1.26rem;
+	opacity: 0;
+}
+.ind4 .heal{
+	-webkit-animation: heal-fly 1s forwards;
+	-webkit-animation-delay: 1s;
+}
+.car{
+	width: 0.87rem;
+	height: 0.87rem;
+	position: absolute;
+	top: 1.63rem;
+	right: 1.2rem;
+	opacity: 0;
+}
+.ind4 .car{
+	-webkit-animation: car-fly 1s forwards;
+	-webkit-animation-delay: 1.5s;
+}
+.doc{
+	width: 0.93rem;
+	height: 0.93rem;
+	position: absolute;
+	right: 1.09rem;
+	bottom: 0.52rem;
+	opacity: 0;
+}
+.ind4 .doc{
+	-webkit-animation: doc-fly 1s forwards;
+	-webkit-animation-delay: 2s;
+}
+.h-doc{
+	width: 1.0rem;
+	height: 1.0rem;
+	position: absolute;
+	top: 0.42rem;
+	left: 1.0rem;
+	opacity: 0;
+}
+.ind4 .h-doc{
+	-webkit-animation: h-doc-fly 1s linear forwards;
+	-webkit-animation-delay: 2.5s;
+}
+.cicle{
+	width: 2.48rem;
+	height: 2.36rem;
+	position: absolute;
+	top: 0.82rem;
+	left: 1.03rem;
+	opacity: 0;
+}
+.ind4 .cicle{
+	-webkit-animation: pao1_move 1s forwards;
+	-webkit-animation-delay: 3s;
+}
+@-webkit-keyframes h-doc-fly{
+	0%{
+		opacity: 0;
+		width: 0.6rem;
+		height: 0.6rem;
+	}
+	100%{
+		opacity: 1;
+		width:1rem;
+		height: 1rem;
+	}
+}
+
+@-webkit-keyframes car-fly{
+	0%{
+		opacity: 0;
+		width: 0.6rem;
+		height: 0.6rem;
+	}
+	100%{
+		opacity: 1;
+		width: 0.87rem;
+		height: 0.87rem;
+	}
+}
+
+@-webkit-keyframes doc-fly{
+	0%{
+		opacity: 0;
+		width: 0.6rem;
+		height: 0.6rem;
+	}
+	100%{
+		opacity: 1;
+		width: 0.93rem;
+		height: 0.93rem;
+	}
+}
+
+
+@-webkit-keyframes heal-fly{
+	0%{
+		opacity: 0;
+		width: 0.6rem;
+		height: 0.6rem;
+	}
+	100%{
+		opacity: 1;
+		width: 0.8rem;
+		height: 0.8rem;
+	}
+}
+
+.text4 p{
+	opacity: 0;
+}
+.ind4 .text4 p{
+	-webkit-animation: text2 1s forwards;
+	-webkit-animation-delay: 3.5s;
+}
+.text4 span{
+	opacity: 0;
+}
+.ind4 .text4 span{
+	-webkit-animation: text2-f2 1s forwards;
+	-webkit-animation-delay: 3.5s;
+}
+/*第五个页面样式设计*/
+.text5{
+	width: 3.58rem;
+	height: 2.95rem;
+	position: absolute;
+	bottom: 0.78rem;
+	left: 1.4rem;
+	text-align: center;
+}
+.logo5{
+	width: 4.76rem;
+	height: 4.37rem;
+	background: url(../images/bg5.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: 1.2rem;
+	left: 0.72rem;
+}
+@-webkit-keyframes women-fly{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateX(50px);
+	}
+	25%{
+		opacity: 1;
+		-webkit-transform: translateX(0px);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateX(0px);
+	}
+}
+.shop{
+	width: 2.82rem;
+	height: 1.56rem;
+	position: absolute;
+	bottom: 0.77rem;
+	left: 0.96rem;
+	opacity: 0;
+}
+.ind5 .shop{
+	-webkit-animation: text2 1s linear forwards;
+}
+.women{
+	width: 1.39rem;
+	height: 2.6rem;
+	position: absolute;
+	top: 0.61rem;
+	left: 2.11rem;
+	opacity: 0;
+}
+.ind5 .women{
+	-webkit-animation: women-fly 1s linear forwards;
+	-webkit-animation-delay: 1s;
+}
+.text5 p{
+	opacity: 0;
+}
+.ind5 .text5 p{
+	-webkit-animation: text2 1s ease forwards;
+	-webkit-animation-delay: 1s;
+}
+.text5 span{
+	opacity: 0;
+	display: block;
+	text-align: center;
+	font-size: 0.3rem;
+	margin-top: 0.5rem;
+}
+.ind5 .text5 span{
+	-webkit-animation: text2 1s ease-in forwards;
+	-webkit-animation-delay: 1s;
+}
+.button{
+	width: 2.27rem;
+	height: 0.52rem;
+	line-height: 0.52rem;
+	position: absolute;
+	bottom: 0;
+	left: 0.55rem;
+	text-align: center;
+	font-size: 0.3rem;
+	opacity: 0;
+
+}
+.ind5 .button{
+	-webkit-animation: text2 1s ease-in forwards;
+	-webkit-animation-delay: 1.5s;
+
+}

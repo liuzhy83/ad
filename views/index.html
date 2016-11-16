@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Access-Control-Allow-Origin" content="http://ggtest.gorgonor.com">
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<input type="button" id="gg" value="跳转到高歌的界面" />
+<input type="button" id="myh" value="跳转到我的健康界面" />
+<textarea id="url" ></textarea>
+<script type="application/javascript" language="JavaScript" src="/javascripts/jquery.js"></script>
+<script type="application/javascript" language="JavaScript" src="/javascripts/jbase64.js"></script>
+
+<script>
+
+    var appkey = "86cddfd688474137aae4cae43518113b",
+
+            secret = "c2b05b36381a41fe87d680fed382b881";
+
+    $(document).ready(function () {
+        var wapEncode = function (appkey, appSecret, keyLen) {
+            var chuo = (new Date()).getTime();
+            var m = chuo % 10;
+            var str1 = BASE64.encoder(appSecret);
+            str1 = str1.substring(0, m) + appkey + str1.substring(m) + chuo;
+            str1 = BASE64.encoder(str1);
+            return str1;
+        };
+
+        var wapEncodePhone=function(appkey,phone){
+            return wapEncode(appkey,phone,11);
+        };
+
+        $('#gg').on('click', function () {
+              var name = encodeURI(encodeURI('张三'));
+              var medicaldesc = '11111';
+              var partnerkey = '2121212';
+              var birthday = '1981-09-11';
+              var sex = '1';
+              var gor_enstr = wapEncodePhone(appkey,'13567895432');
+
+            $('#url').val('http://111.200.225.242:4000/ggys?&sex='+sex+'&birthdat='+birthday+'&name='+name+'&gor_enstr='+gor_enstr);
+        });
+    });
+
+</script>
+</body>
+</html>

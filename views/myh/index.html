@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="yes" name="apple-touch-fullscreen" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<script src="/javascripts/flexible.js"></script>
+	<title>首页rem布局</title>
+	<script type="text/javascript">
+		//使用的是  1rem = 100px
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth) return;
+					//这个是ipad最大的宽度640
+					if(clientWidth >= 640) {
+						docEl.style.fontSize = '100px';
+					} else {
+						docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+					}
+				};
+			if(!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+    <link rel="stylesheet" href="/stylesheets/swiper.min.css">
+ 	<link rel="stylesheet" type="text/css" href="/stylesheets/index.css"/>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="ind1">
+            	<div class="logo" id="logo1">
+					<img src="/images/logo.png"/>
+				</div>
+				<div class="text text1">
+					<p>健康中山</p>
+					<span>中山市唯一官方服务平台</span>
+					<img src="/images/next.png" class="next"/>
+				</div>
+            </div>
+            <div class="swiper-slide" id="ind2">
+            	<div class="logo2">
+            		<img src="/images/pao1.png" class="pao1"/>
+            		<img src="/images/pao2.png" class="pao2"/>
+            		<img src="/images/pao3.png" class="pao3"/>
+            		<img src="/images/phone.png" class="phone"/>
+            		<img src="/images/phone-m.png" class="phone-m"/>
+            	</div>
+            	<div class="text text2">
+            		<p>挂号更方便</p>
+					<span>挂号一站通  全市医院任你选</span>
+					<img src="/images/next.png" class="next"/>
+            	</div>
+            </div>
+            <div class="swiper-slide" id="ind3">
+            	<div class="logo3">
+            		<img src="/images/phone3.png" class="phone3"/>
+            		<img src="/images/chouti.png" class="chouti"/>
+            	</div>
+            	<div class="text text3" >
+            		<p>健康守护中山人</p>
+					<span>报告手机看  档案我来管</span>
+					<img src="/images/next.png" class="next"/>
+            	</div>
+            </div>
+            <div class="swiper-slide" id="ind4">
+            	<div class="logo4">
+            		<img src="/images/scicle.png" class="scicle"/>
+            		<img src="/images/lcicle.png" class="lcicle"/>
+            		<img src="/images/p1.png" class="heal"/>
+            		<img src="/images/p2.png" class="car"/>
+            		<img src="/images/p3.png" class="doc"/>
+            		<img src="/images/p4.png" class="h-doc"/>
+            		<img src="/images/cicle.png" class="cicle"/>
+            	</div>
+            	<div class="text text4">
+            		<p>一站式健康管理</p>
+					<span>名医直达 送药到家 <br />健康分析 家庭医生</span>
+					<img src="/images/next.png" class="next"/>
+            	</div>
+            </div>
+            <div class="swiper-slide" id="ind5">
+            	<div class="logo5">
+            		<img src="/images/woman.png" class="women"/>
+            		<img src="/images/shop.png" class="shop"/>
+            	</div>
+            	<div class="text5">
+            		<p>更健康更优惠</p>
+					<span>体检更优惠 买药更实惠<br />
+					保健养生美容我全会</span>
+					<div class="button">敬请期待</div>
+            	</div>
+            </div>
+        </div>
+    </div>
+	<script src="/javascripts/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/swiper.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+    	//去除圓圈
+        pagination: '.swiper-pagination',
+        direction: 'vertical',
+        slidesPerView: 1,
+        paginationClickable: true,
+        mousewheelControl: true,
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+		   $('#ind1').addClass('ind1');
+		},
+        onSlideChangeEnd: function(swiper){ //Swiper2.x的初始化是onFirstInit
+        // 	$('#ind1').removeClass('ind1');
+        // 	$('#ind2').removeClass('ind2');
+        // '#ind4').removeClass('ind4');
+        // '#ind3').removeClass('ind3');
+        // '#ind5').removeClass('ind5');
+		   if(swiper.activeIndex == 0){
+		   	 	$('#ind1').addClass('ind1');
+		   }else if(swiper.activeIndex == 1){
+		   	 	$('#ind2').addClass('ind2');
+		   }else if(swiper.activeIndex == 2){
+		   		$('#ind3').addClass('ind3');
+		   }else if(swiper.activeIndex == 3){
+		   		$('#ind4').addClass('ind4');
+		   }else if(swiper.activeIndex == 4){
+		   		$('#ind5').addClass('ind5');
+		   }
+		}
+    });
+    </script>
+</body>
+</html>

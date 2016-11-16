@@ -1,0 +1,224 @@
+[2016-11-01 18:45:28.174] [DEBUG] lifesea - 转向到高歌页面
+[2016-11-05 08:51:19.546] [DEBUG] lifesea - undefined 'identitycounters.undefined {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} '
+[2016-11-05 08:53:55.263] [INFO] lifesea - 
+
+Started 2016-11-05T00:53:55.262Z GET / ::1
+[2016-11-05 08:53:55.299] [DEBUG] lifesea - GET /
+[2016-11-05 08:53:55.301] [INFO] lifesea - Completed 500 undefined
+[2016-11-05 08:53:55.317] [INFO] lifesea - 
+
+Started 2016-11-05T00:53:55.317Z GET /stylesheets/style.css ::1
+[2016-11-05 08:53:55.323] [DEBUG] lifesea - GET /stylesheets/style.css
+[2016-11-05 08:53:55.324] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 08:53:55.326] [INFO] lifesea - 
+
+Started 2016-11-05T00:53:55.326Z GET /javascripts/jquery.js ::1
+[2016-11-05 08:53:55.327] [INFO] lifesea - 
+
+Started 2016-11-05T00:53:55.327Z GET /javascripts/jbase64.js ::1
+[2016-11-05 08:53:55.334] [DEBUG] lifesea - GET /javascripts/jbase64.js
+[2016-11-05 08:53:55.334] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 08:53:55.341] [DEBUG] lifesea - GET /javascripts/jquery.js
+[2016-11-05 08:53:55.342] [INFO] lifesea - Completed 200 undefined
+[2016-11-05 08:56:04.254] [DEBUG] lifesea - undefined 'identitycounters.undefined {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} '
+[2016-11-05 08:56:14.453] [INFO] lifesea - 
+
+Started 2016-11-05T00:56:14.453Z GET / ::1
+[2016-11-05 08:56:14.467] [INFO] lifesea - Render view index undefined
+[2016-11-05 08:56:14.471] [DEBUG] lifesea - GET /
+[2016-11-05 08:56:14.471] [INFO] lifesea - Completed 200 undefined
+[2016-11-05 08:56:14.475] [INFO] lifesea - 
+
+Started 2016-11-05T00:56:14.475Z GET /stylesheets/style.css ::1
+[2016-11-05 08:56:14.477] [INFO] lifesea - 
+
+Started 2016-11-05T00:56:14.477Z GET /javascripts/jbase64.js ::1
+[2016-11-05 08:56:14.478] [INFO] lifesea - 
+
+Started 2016-11-05T00:56:14.478Z GET /javascripts/jquery.js ::1
+[2016-11-05 08:56:14.483] [DEBUG] lifesea - GET /stylesheets/style.css
+[2016-11-05 08:56:14.484] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 08:56:14.486] [DEBUG] lifesea - GET /javascripts/jbase64.js
+[2016-11-05 08:56:14.486] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 08:56:14.487] [DEBUG] lifesea - GET /javascripts/jquery.js
+[2016-11-05 08:56:14.487] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 08:56:14.488] [INFO] lifesea - 
+
+Started 2016-11-05T00:56:14.488Z GET /stylesheets/style.css ::1
+[2016-11-05 08:56:14.490] [DEBUG] lifesea - GET /stylesheets/style.css
+[2016-11-05 08:56:14.490] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 08:56:14.491] [INFO] lifesea - 
+
+Started 2016-11-05T00:56:14.491Z GET /javascripts/jquery.js ::1
+[2016-11-05 08:56:14.492] [INFO] lifesea - 
+
+Started 2016-11-05T00:56:14.492Z GET /javascripts/jbase64.js ::1
+[2016-11-05 08:56:14.495] [DEBUG] lifesea - GET /javascripts/jquery.js
+[2016-11-05 08:56:14.495] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 08:56:14.496] [DEBUG] lifesea - GET /javascripts/jbase64.js
+[2016-11-05 08:56:14.497] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 09:00:44.634] [DEBUG] lifesea - undefined 'identitycounters.undefined {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} '
+[2016-11-05 09:01:58.212] [DEBUG] lifesea - undefined 'identitycounters.undefined {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} '
+[2016-11-05 09:04:04.592] [DEBUG] lifesea - undefined 'identitycounters.undefined {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} '
+[2016-11-05 09:17:05.843] [INFO] lifesea - Started method:GET url:/ ip:::1
+[2016-11-05 09:17:05.859] [INFO] lifesea - Render view index undefined
+[2016-11-05 09:17:05.864] [DEBUG] lifesea - GET /
+[2016-11-05 09:17:05.864] [INFO] lifesea - Completed 200 undefined
+[2016-11-05 09:17:05.867] [INFO] lifesea - Started method:GET url:/stylesheets/style.css ip:::1
+[2016-11-05 09:17:05.869] [INFO] lifesea - Started method:GET url:/javascripts/jbase64.js ip:::1
+[2016-11-05 09:17:05.871] [INFO] lifesea - Started method:GET url:/javascripts/jquery.js ip:::1
+[2016-11-05 09:17:05.876] [DEBUG] lifesea - GET /stylesheets/style.css
+[2016-11-05 09:17:05.877] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 09:17:05.879] [DEBUG] lifesea - GET /javascripts/jbase64.js
+[2016-11-05 09:17:05.879] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 09:17:05.880] [DEBUG] lifesea - GET /javascripts/jquery.js
+[2016-11-05 09:17:05.882] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 14:20:03.469] [DEBUG] lifesea - undefined 'identitycounters.undefined {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} '
+[2016-11-05 14:20:19.747] [INFO] lifesea - Started method:GET url:/ ip:::1
+[2016-11-05 14:20:19.764] [INFO] lifesea - Render view index undefined
+[2016-11-05 14:20:19.780] [DEBUG] lifesea - GET /
+[2016-11-05 14:20:19.781] [INFO] lifesea - Completed 200 undefined
+[2016-11-05 14:20:19.787] [INFO] lifesea - Started method:GET url:/stylesheets/style.css ip:::1
+[2016-11-05 14:20:19.788] [INFO] lifesea - Started method:GET url:/javascripts/jquery.js ip:::1
+[2016-11-05 14:20:19.789] [INFO] lifesea - Started method:GET url:/javascripts/jbase64.js ip:::1
+[2016-11-05 14:20:19.806] [DEBUG] lifesea - GET /stylesheets/style.css
+[2016-11-05 14:20:19.806] [INFO] lifesea - Completed 200 undefined
+[2016-11-05 14:20:19.811] [DEBUG] lifesea - GET /javascripts/jbase64.js
+[2016-11-05 14:20:19.811] [INFO] lifesea - Completed 200 undefined
+[2016-11-05 14:20:19.815] [DEBUG] lifesea - GET /javascripts/jquery.js
+[2016-11-05 14:20:19.815] [INFO] lifesea - Completed 200 undefined
+[2016-11-05 14:20:20.064] [INFO] lifesea - Started method:GET url:/favicon.ico ip:::1
+[2016-11-05 14:20:20.073] [INFO] lifesea - Render view error undefined
+[2016-11-05 14:20:20.075] [DEBUG] lifesea - GET /favicon.ico
+[2016-11-05 14:20:20.075] [INFO] lifesea - Completed 404 undefined
+[2016-11-05 14:22:16.886] [DEBUG] lifesea - undefined 'identitycounters.undefined {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} '
+[2016-11-05 14:22:33.342] [DEBUG] lifesea - undefined 'identitycounters.undefined {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} '
+[2016-11-05 14:22:40.551] [INFO] lifesea - Started method:GET url:/ ip:::1
+[2016-11-05 14:22:40.567] [INFO] lifesea - Render view index undefined
+[2016-11-05 14:22:40.571] [DEBUG] lifesea - GET /
+[2016-11-05 14:22:40.572] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 14:22:40.585] [INFO] lifesea - Started method:GET url:/stylesheets/style.css ip:::1
+[2016-11-05 14:22:40.587] [INFO] lifesea - Started method:GET url:/javascripts/jquery.js ip:::1
+[2016-11-05 14:22:40.588] [INFO] lifesea - Started method:GET url:/javascripts/jbase64.js ip:::1
+[2016-11-05 14:22:40.606] [DEBUG] lifesea - GET /stylesheets/style.css
+[2016-11-05 14:22:40.610] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 14:22:40.625] [DEBUG] lifesea - GET /javascripts/jquery.js
+[2016-11-05 14:22:40.626] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 14:22:40.641] [DEBUG] lifesea - GET /javascripts/jbase64.js
+[2016-11-05 14:22:40.642] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 14:59:22.572] [DEBUG] lifesea - undefined 'identitycounters.undefined {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} '
+[2016-11-05 14:59:29.210] [INFO] lifesea - Started method:GET url:/ ip:::1
+[2016-11-05 14:59:29.226] [INFO] lifesea - Render view index undefined
+[2016-11-05 14:59:29.230] [DEBUG] lifesea - GET /
+[2016-11-05 14:59:29.230] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 14:59:29.244] [INFO] lifesea - Started method:GET url:/stylesheets/style.css ip:::1
+[2016-11-05 14:59:29.247] [INFO] lifesea - Started method:GET url:/javascripts/jquery.js ip:::1
+[2016-11-05 14:59:29.251] [DEBUG] lifesea - GET /stylesheets/style.css
+[2016-11-05 14:59:29.251] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 14:59:29.252] [INFO] lifesea - Started method:GET url:/javascripts/jbase64.js ip:::1
+[2016-11-05 14:59:29.257] [DEBUG] lifesea - GET /javascripts/jquery.js
+[2016-11-05 14:59:29.258] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 14:59:29.259] [DEBUG] lifesea - GET /javascripts/jbase64.js
+[2016-11-05 14:59:29.259] [INFO] lifesea - Completed 304 undefined
+[2016-11-05 15:00:11.401] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 142ms
+[2016-11-05 15:00:14.596] [INFO] lifesea - Started method:GET url:/ ip:::1
+[2016-11-05 15:00:14.608] [INFO] lifesea - Render view index (7ms)
+[2016-11-05 15:00:14.612] [DEBUG] lifesea - GET /
+[2016-11-05 15:00:14.613] [INFO] lifesea - Completed 304 (17ms)
+[2016-11-05 15:00:14.623] [INFO] lifesea - Started method:GET url:/stylesheets/style.css ip:::1
+[2016-11-05 15:00:14.625] [INFO] lifesea - Started method:GET url:/javascripts/jquery.js ip:::1
+[2016-11-05 15:00:14.627] [INFO] lifesea - Started method:GET url:/javascripts/jbase64.js ip:::1
+[2016-11-05 15:00:14.645] [DEBUG] lifesea - GET /stylesheets/style.css
+[2016-11-05 15:00:14.647] [INFO] lifesea - Completed 304 (22ms)
+[2016-11-05 15:00:14.664] [DEBUG] lifesea - GET /javascripts/jquery.js
+[2016-11-05 15:00:14.664] [INFO] lifesea - Completed 304 (39ms)
+[2016-11-05 15:00:14.668] [DEBUG] lifesea - GET /javascripts/jbase64.js
+[2016-11-05 15:00:14.671] [INFO] lifesea - Completed 304 (43ms)
+[2016-11-05 15:05:55.891] [INFO] lifesea - Started method:POST url:/ggys ip:::1
+[2016-11-05 15:05:55.928] [INFO] lifesea - Render view error (3ms)
+[2016-11-05 15:05:55.929] [DEBUG] lifesea - POST /ggys
+[2016-11-05 15:05:55.929] [INFO] lifesea - Completed 404 (39ms)
+[2016-11-05 15:14:16.437] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 141ms
+[2016-11-05 15:14:23.850] [INFO] lifesea - Started method:GET url:/ ip:::1
+[2016-11-05 15:14:23.867] [INFO] lifesea - Render view index (12ms)
+[2016-11-05 15:14:23.873] [DEBUG] lifesea - GET /
+[2016-11-05 15:14:23.874] [INFO] lifesea - Completed 304 (23ms)
+[2016-11-05 15:14:23.881] [INFO] lifesea - Started method:GET url:/stylesheets/style.css ip:::1
+[2016-11-05 15:14:23.884] [INFO] lifesea - Started method:GET url:/javascripts/jbase64.js ip:::1
+[2016-11-05 15:14:23.885] [INFO] lifesea - Started method:GET url:/javascripts/jquery.js ip:::1
+[2016-11-05 15:14:23.888] [DEBUG] lifesea - GET /stylesheets/style.css
+[2016-11-05 15:14:23.892] [INFO] lifesea - Completed 304 (8ms)
+[2016-11-05 15:14:23.895] [DEBUG] lifesea - GET /javascripts/jbase64.js
+[2016-11-05 15:14:23.896] [INFO] lifesea - Completed 304 (11ms)
+[2016-11-05 15:14:23.897] [DEBUG] lifesea - GET /javascripts/jquery.js
+[2016-11-05 15:14:23.897] [INFO] lifesea - Completed 304 (13ms)
+[2016-11-05 15:15:37.733] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 173ms
+[2016-11-05 15:15:43.073] [INFO] lifesea - Started method:GET url:/ ip:::1
+[2016-11-05 15:15:43.091] [INFO] lifesea - Render view index (15ms)
+[2016-11-05 15:15:43.094] [DEBUG] lifesea - GET /
+[2016-11-05 15:15:43.095] [INFO] lifesea - Completed 304 (23ms)
+[2016-11-05 15:15:43.107] [INFO] lifesea - Started method:GET url:/stylesheets/style.css ip:::1
+[2016-11-05 15:15:43.109] [INFO] lifesea - Started method:GET url:/javascripts/jquery.js ip:::1
+[2016-11-05 15:15:43.110] [INFO] lifesea - Started method:GET url:/javascripts/jbase64.js ip:::1
+[2016-11-05 15:15:43.114] [DEBUG] lifesea - GET /stylesheets/style.css
+[2016-11-05 15:15:43.116] [INFO] lifesea - Completed 304 (9ms)
+[2016-11-05 15:15:43.119] [DEBUG] lifesea - GET /javascripts/jquery.js
+[2016-11-05 15:15:43.119] [INFO] lifesea - Completed 304 (10ms)
+[2016-11-05 15:15:43.120] [DEBUG] lifesea - GET /javascripts/jbase64.js
+[2016-11-05 15:15:43.121] [INFO] lifesea - Completed 304 (11ms)
+[2016-11-05 15:21:10.837] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 137ms
+[2016-11-05 15:21:46.377] [DEBUG] lifesea - [35mMONGO[39m identitycounters.[34mfindOne[39m {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} [32m141ms[39m
+[2016-11-05 15:24:28.333] [INFO] lifesea - Started method:GET url:/ ip:::1
+[2016-11-05 15:24:28.349] [INFO] lifesea - Render view index [32m(12ms)[39m
+[2016-11-05 15:24:28.353] [DEBUG] lifesea - GET /
+[2016-11-05 15:24:28.354] [INFO] lifesea - Completed 304 [32m(21ms)[39m
+[2016-11-05 15:24:28.364] [INFO] lifesea - Started method:GET url:/stylesheets/style.css ip:::1
+[2016-11-05 15:24:28.366] [INFO] lifesea - Started method:GET url:/javascripts/jquery.js ip:::1
+[2016-11-05 15:24:28.368] [INFO] lifesea - Started method:GET url:/javascripts/jbase64.js ip:::1
+[2016-11-05 15:24:28.374] [DEBUG] lifesea - GET /stylesheets/style.css
+[2016-11-05 15:24:28.374] [INFO] lifesea - Completed 304 [32m(10ms)[39m
+[2016-11-05 15:24:28.378] [DEBUG] lifesea - GET /javascripts/jquery.js
+[2016-11-05 15:24:28.378] [INFO] lifesea - Completed 304 [32m(12ms)[39m
+[2016-11-05 15:24:28.383] [DEBUG] lifesea - GET /javascripts/jbase64.js
+[2016-11-05 15:24:28.384] [INFO] lifesea - Completed 304 [32m(16ms)[39m
+[2016-11-05 16:53:19.987] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 145ms
+[2016-11-05 16:53:23.320] [INFO] lifesea - Started method:GET url:/ ip:::1
+[2016-11-05 16:53:23.333] [INFO] lifesea - Render view index (10ms)
+[2016-11-05 16:53:23.336] [DEBUG] lifesea - GET /
+[2016-11-05 16:53:23.337] [INFO] lifesea - Completed 304 (18ms)
+[2016-11-05 16:53:23.351] [INFO] lifesea - Started method:GET url:/javascripts/jbase64.js ip:::1
+[2016-11-05 16:53:23.353] [INFO] lifesea - Started method:GET url:/javascripts/jquery.js ip:::1
+[2016-11-05 16:53:23.357] [DEBUG] lifesea - GET /javascripts/jbase64.js
+[2016-11-05 16:53:23.358] [INFO] lifesea - Completed 304 (7ms)
+[2016-11-05 16:53:23.360] [INFO] lifesea - Started method:GET url:/stylesheets/style.css ip:::1
+[2016-11-05 16:53:23.364] [DEBUG] lifesea - GET /javascripts/jquery.js
+[2016-11-05 16:53:23.365] [INFO] lifesea - Completed 304 (12ms)
+[2016-11-05 16:53:23.368] [DEBUG] lifesea - GET /stylesheets/style.css
+[2016-11-05 16:53:23.368] [INFO] lifesea - Completed 304 (8ms)
+[2016-11-05 16:53:36.468] [INFO] lifesea - Started method:GET url:/ ip:::1
+[2016-11-05 16:53:36.470] [INFO] lifesea - Render view index (1ms)
+[2016-11-05 16:53:36.471] [DEBUG] lifesea - GET /
+[2016-11-05 16:53:36.471] [INFO] lifesea - Completed 304 (3ms)
+[2016-11-05 16:53:36.481] [INFO] lifesea - Started method:GET url:/stylesheets/style.css ip:::1
+[2016-11-05 16:53:36.482] [INFO] lifesea - Started method:GET url:/javascripts/jquery.js ip:::1
+[2016-11-05 16:53:36.483] [INFO] lifesea - Started method:GET url:/javascripts/jbase64.js ip:::1
+[2016-11-05 16:53:36.484] [DEBUG] lifesea - GET /stylesheets/style.css
+[2016-11-05 16:53:36.484] [INFO] lifesea - Completed 304 (3ms)
+[2016-11-05 16:53:36.485] [DEBUG] lifesea - GET /javascripts/jquery.js
+[2016-11-05 16:53:36.486] [INFO] lifesea - Completed 304 (4ms)
+[2016-11-05 16:53:36.487] [DEBUG] lifesea - GET /javascripts/jbase64.js
+[2016-11-05 16:53:36.488] [INFO] lifesea - Completed 304 (6ms)
+[2016-11-05 16:53:49.305] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 137ms
+[2016-11-05 16:53:55.630] [INFO] lifesea - Started method:GET url:/ ip:::1
+[2016-11-05 16:53:55.645] [INFO] lifesea - Render view index (10ms)
+[2016-11-05 16:53:55.649] [DEBUG] lifesea - GET /
+[2016-11-05 16:53:55.649] [INFO] lifesea - Completed 304 (20ms)
+[2016-11-05 16:53:55.664] [INFO] lifesea - Started method:GET url:/stylesheets/style.css ip:::1
+[2016-11-05 16:53:55.667] [INFO] lifesea - Started method:GET url:/javascripts/jquery.js ip:::1
+[2016-11-05 16:53:55.668] [INFO] lifesea - Started method:GET url:/javascripts/jbase64.js ip:::1
+[2016-11-05 16:53:55.674] [DEBUG] lifesea - GET /stylesheets/style.css
+[2016-11-05 16:53:55.674] [INFO] lifesea - Completed 304 (10ms)
+[2016-11-05 16:53:55.676] [DEBUG] lifesea - GET /javascripts/jquery.js
+[2016-11-05 16:53:55.676] [INFO] lifesea - Completed 304 (9ms)
+[2016-11-05 16:53:55.677] [DEBUG] lifesea - GET /javascripts/jbase64.js
+[2016-11-05 16:53:55.678] [INFO] lifesea - Completed 304 (10ms)

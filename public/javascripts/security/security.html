@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>安全认证测试页面</title>
+    <meta charset="utf-8"/>
+    <style>
+       tr,th,td{
+          border: 0;
+       }
+       th{
+         font-size: 12px;
+         font-weight: bold;
+       }
+       input[type=text]{
+         width:90%;
+       }
+       input[type=button]{
+         display: inline-block;
+         zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+         *display: inline;
+         vertical-align: baseline;
+         margin: 0 2px;
+         outline: none;
+         cursor: pointer;
+         text-align: center;
+         text-decoration: none;
+         font: 14px/100% Arial, Helvetica, sans-serif;
+         padding: .5em 2em .55em;
+         text-shadow: 0 1px 1px rgba(0,0,0,.3);
+         -webkit-border-radius: .5em;
+         -moz-border-radius: .5em;
+         border-radius: .5em;
+         -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+         -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+         box-shadow: 0 1px 2px rgba(0,0,0,.2);
+       }
+    </style>
+</head>
+<body>
+  <table align="center" width="90%" cellspace="0" cellpadding="0" border="0">
+      <tr>
+        <th>请求地址</th>
+        <td colspan="5"><input type="text" id='_uri' value="http://localhost:8080/myh" ></td>
+      </tr>
+      <tr>
+          <th>AppKey:</th>
+          <td><input type="text" id='appkey' value="86cddfd688474137aae4cae43518113b" ></td>
+          <th>加密秘钥:</th>
+          <td><input type="text" id='secret' value="c2b05b36381a41fe87d680fed382b881" ></td>
+          <th>UserId:</th>
+          <td><input type="text" id='userid' value="zhangshan" ></td>
+      </tr>
+      <tr>
+          <th>姓名:</th>
+          <td><input type="text" id='name' value="张三" ></td>
+          <th>手机号:</th>
+          <td><input type="text" id='mobilephone' value="18811119999" ></td>
+          <th>身份证号:</th>
+          <td><input type="text" id='idcard' value="511702197403222585" ></td>
+      </tr>
+      <tr>
+          <th>提交的数据格式</th>
+          <td colspan="5"><textarea disabled id="postData" style="width:80%" rows="5" ></textarea></td>
+      </tr>
+      <tr>
+          <th>返回数据</th>
+          <td colspan="5"><textarea disabled id="resData" style="width:80%" rows="5" ></textarea></td>
+      </tr>
+      <tr>
+         <td colspan="2" align="right"><input type="button" id="clearSubData" value="清空提交数据" /></td>
+         <td colspan="2" align="center"><input type="button" id="getSubData" value="获取提交数据" /></td>
+         <td colspan="2" align="left"><input type="button" id="sub" value="提交认证" /></td>
+      </tr>
+  </table>
+<script type="application/javascript" language="JavaScript" src="jquery.js"></script>
+<script type="application/javascript" language="JavaScript" src="crypto-js.js"></script>
+<script>
+       $(document).ready(function () {
+         var queryData;
+         function init(){
+             queryData = {
+                 _uri:$('#_uri').val(),
+                 appkey:$('#appkey').val(),
+                 secret:$('#secret').val(),
+                 userid:$('#userid').val(),
+                 name:$('#name').val(),
+                 mobilephone:$('#mobilephone').val(),
+                 idcard:$('#idcard').val()
+             };
+         }
+         var encryptByDES = function(message, key){
+            var keyHex = CryptoJS.enc.Utf8.parse(key);
+            var encrypted = CryptoJS.DES.encrypt(message, keyHex, {
+               mode: CryptoJS.mode.ECB,
+               padding: CryptoJS.pad.Pkcs7
+            });
+            return encrypted.toString();
+         };
+         uuid = function(len, radix) { //指定长度和基数
+             var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
+             var uuid = [],
+                 i;
+             radix = radix || chars.length;
+             if (len) {
+                 // Compact form
+                 for (i = 0; i < len; i++) uuid[i] = chars[0 | Math.random() * radix];
+             } else {
+                 var r;
+                 uuid[8] = uuid[13] = uuid[18] = uuid[23] = '-';
+                 uuid[14] = '4';
+                 for (i = 0; i < 36; i++) {
+                     if (!uuid[i]) {
+                         r = 0 | Math.random() * 16;
+                         uuid[i] = chars[(i == 19) ? (r & 0x3) | 0x8 : r];
+                     }
+                 }
+             }
+             return uuid.join('');
+         };
+         var dealSubData = function(){
+           init();
+           var timestamp = (new Date()).getTime();
+           var desStr = encryptByDES(timestamp + "&" + uuid(4, 16), queryData.secret);
+           // var aesStr = decryptByDES(desStr, sign_key);
+           var mdStr = CryptoJS.MD5(desStr).toString();
+           return {
+               k: queryData.appkey,
+               t: desStr,
+               d: timestamp,
+               s: mdStr,
+               name:encodeURI(queryData.name),
+               userid:queryData.userid,
+               mobilephone:queryData.mobilephone,
+               idcard:queryData.idcard
+           }
+         };
+         $('#sub').on('click',function(){
+           //params.data = JSON.stringify(data);
+           var params = dealSubData();
+           $.get(queryData._uri, params,function(data){
+                if(typeof data !='string'){
+                    data = JSON.stringify(data);
+                }
+                $('#resData').val(data);
+           });
+         });
+         $('#getSubData').on('click',function(){
+             var params = dealSubData();
+             $('#postData').val(queryData._uri+'?'+$.param(params));
+         });
+         $('#clearSubData').on('click',function(){
+             $('#resData').val('');
+             $('#postData').val('');
+         });
+
+       });
+</script>
+</body>
