@@ -38,7 +38,7 @@ router.get('/ad/ggys',function (req, res, next) {
     var appkey = req.query.appkey;
     //------------------------------访问高歌医生拼接参数---------
     //手机号加密串
-    var gor_enstr = wapEncode(appkey,phone,11);
+    var gor_enstr = wapEncode(config.apps.gg.appkey,phone,11);
 
     var s$a = idcard?getSex$Age(idcard):{sex:0,birthday:null};
     //0 未知 1男 2女
