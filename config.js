@@ -21,7 +21,7 @@ module.exports = {
     //mongoDB配置
     mongodb: {
         loglevel:'DEBUG',
-        url: 'mongodb://lifesea:lifesea@192.168.188.73:27017/myhealth'
+        url: 'mongodb://lifesea:lifesea@127.0.0.1:27017/myhealth'
     },
 
     apps: {
