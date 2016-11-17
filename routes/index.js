@@ -10,7 +10,7 @@ router.get('/', function (req, res, next) {
     res.render('index',{'title':'测试首页'});
 });
 
-router.get('/ggys', function (req, res, next) {
+router.get('/ad/ggys', function (req, res, next) {
     //手机号加密串
     var gor_enstr = req.query.gor_enstr;
     //0 未知 1男 2女
@@ -28,7 +28,7 @@ router.get('/ggys', function (req, res, next) {
     persistence.saveLinkedLog('10000000002','高歌医生',name,gor_enstr,sex);
 });
 
-router.get('/myh',function(req,res,next){
+router.get('/ad/myh',function(req,res,next){
     //手机号加密串
     var gor_enstr = req.params.gor_enstr;
     //0 未知 1男 2女
