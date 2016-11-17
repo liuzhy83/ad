@@ -43,7 +43,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 //静态文件目录
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use('/', routes);
 
 // catch 404 and forward to error handler

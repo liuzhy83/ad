@@ -40,13 +40,13 @@
   <table align="center" width="90%" cellspace="0" cellpadding="0" border="0">
       <tr>
         <th>请求地址</th>
-        <td colspan="5"><input type="text" id='_uri' value="http://localhost:8080/myh" ></td>
+        <td colspan="5"><input type="text" id='_uri' value="http://localhost:3001/ad/ggys" ></td>
       </tr>
       <tr>
           <th>AppKey:</th>
-          <td><input type="text" id='appkey' value="86cddfd688474137aae4cae43518113b" ></td>
+          <td><input type="text" id='appkey' value="531ab9a0ac8f11e68ab58ba03d062ad4" ></td>
           <th>加密秘钥:</th>
-          <td><input type="text" id='secret' value="c2b05b36381a41fe87d680fed382b881" ></td>
+          <td><input type="text" id='secret' value="29232EA6DU98JG0F" ></td>
           <th>UserId:</th>
           <td><input type="text" id='userid' value="zhangshan" ></td>
       </tr>
@@ -59,16 +59,21 @@
           <td><input type="text" id='idcard' value="511702197403222585" ></td>
       </tr>
       <tr>
-          <th>提交的数据格式</th>
-          <td colspan="5"><textarea disabled id="postData" style="width:80%" rows="5" ></textarea></td>
+          <th>加密后数据格式</th>
+          <td colspan="5"><textarea id="secreted" style="width:80%" rows="5" ></textarea></td>
+      </tr>
+      <tr>
+          <th>获取提交数据格式</th>
+          <td colspan="5"><textarea id="postData" style="width:80%" rows="5" ></textarea></td>
       </tr>
       <tr>
           <th>返回数据</th>
           <td colspan="5"><textarea disabled id="resData" style="width:80%" rows="5" ></textarea></td>
       </tr>
       <tr>
-         <td colspan="2" align="right"><input type="button" id="clearSubData" value="清空提交数据" /></td>
-         <td colspan="2" align="center"><input type="button" id="getSubData" value="获取提交数据" /></td>
+         <td colspan="2" align="right"><input type="button" id="getSecretData" value="获取加密后数据" /></td>
+         <td colspan="1" align="center"><input type="button" id="clearSubData" value="清空提交数据" /></td>
+         <td colspan="1" align="center"><input type="button" id="getSubData" value="获取提交数据" /></td>
          <td colspan="2" align="left"><input type="button" id="sub" value="提交认证" /></td>
       </tr>
   </table>
@@ -84,7 +89,7 @@
                  secret:$('#secret').val(),
                  userid:$('#userid').val(),
                  name:$('#name').val(),
-                 mobilephone:$('#mobilephone').val(),
+                 phone:$('#mobilephone').val(),
                  idcard:$('#idcard').val()
              };
          }
@@ -120,18 +125,16 @@
          var dealSubData = function(){
            init();
            var timestamp = (new Date()).getTime();
-           var desStr = encryptByDES(timestamp + "&" + uuid(4, 16), queryData.secret);
+           var desStr = encryptByDES(queryData.appkey+'_'+timestamp+ '_'+queryData.phone+'_'+queryData.idcard+'_'+uuid(4,16), queryData.secret);
+           //alert(desStr);
            // var aesStr = decryptByDES(desStr, sign_key);
-           var mdStr = CryptoJS.MD5(desStr).toString();
+           //var mdStr = CryptoJS.MD5(desStr).toString();
            return {
-               k: queryData.appkey,
-               t: desStr,
-               d: timestamp,
-               s: mdStr,
-               name:encodeURI(queryData.name),
+               appkey:queryData.appkey,
+               timestamp: timestamp,
+               name:encodeURI(encodeURI(queryData.name)),
                userid:queryData.userid,
-               mobilephone:queryData.mobilephone,
-               idcard:queryData.idcard
+               sign: desStr
            }
          };
          $('#sub').on('click',function(){
@@ -151,6 +154,11 @@
          $('#clearSubData').on('click',function(){
              $('#resData').val('');
              $('#postData').val('');
+         });
+
+         $('#getSecretData').on('click',function(){
+              var params = dealSubData();
+              $('#secreted').val(params.sign);
          });
 
        });

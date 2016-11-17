@@ -23,12 +23,21 @@ module.exports = {
         loglevel:'DEBUG',
         url: 'mongodb://lifesea:lifesea@127.0.0.1:27017/myhealth'
     },
-
+    //外部APP的相关信息
     apps: {
+        jkzs:{
+            appkey:'531ab9a0ac8f11e68ab58ba03d062ad4',
+            secret:'29232EA6DU98JG0F'
+        },
         gg: {
             appkey: '86cddfd688474137aae4cae43518113b',
             secret: 'c2b05b36381a41fe87d680fed382b881'
         }
+    },
+
+    security:{
+       //调用相差间隔
+       interval:5000
     }
 
 };

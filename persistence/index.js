@@ -1,13 +1,15 @@
 var models = require('../models');
 var logger = require('../common/logger');
 var LinkedLog = models.LinkedLog;
-exports.saveLinkedLog = function (c_id, c_name, user, phone, sex) {
+exports.saveLinkedLog = function (c_id, c_name, userid,name,phone,sex,idcard) {
     var log = new LinkedLog({
         column_id: c_id,
         column_name: c_name,
-        user: user,
+        userid: userid,
+        name:name,
         phone: phone,
-        sex: sex
+        sex: sex,
+        idcard:idcard
     });
     log.save(function (err) {
         if (err) {

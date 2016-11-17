@@ -3,16 +3,17 @@ var Schema = mongoose.Schema;
 var autoinc = require('mongoose-auto-increment');
 
 //点击日志明细表
-
 var LinkedLog = new Schema({
     //创建时间
     create_at: {type: Date, default: Date.now},
     column_id: {type: String},
     column_name: {type: String},
     xh: {type: Number},
-    user: {type: String},
+    name:{type:String},
+    userid: {type: String},
     phone: {type: String},
-    sex: {type: String}
+    sex: {type: String},
+    idcard:{type:Number}
 });
 
 autoinc.initialize(mongoose);
