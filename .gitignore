@@ -1,3 +1,5 @@
 node_modules
 logs
 *.log_*
+config.js
+package.json
