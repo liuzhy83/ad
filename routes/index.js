@@ -24,7 +24,7 @@ router.get('/ad/ggys', function (req, res, next) {
     //name  账户姓名
     var name = req.query.name;
     //访问高歌医生　
-    res.redirect('http://ggtest.gorgonor.com/partner/jkzs/home?&sex='+sex+'&birthdat='+birthday+'&name='+name+'&gor_enstr'+gor_enstr);
+    res.redirect('http://ggtest.gorgonor.com/partner/jkzs/home?&sex='+sex+'&birthdat='+birthday+'&name='+name+'&gor_enstr='+gor_enstr);
     persistence.saveLinkedLog('10000000002','高歌医生',name,gor_enstr,sex);
 });
 

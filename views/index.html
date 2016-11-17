@@ -4,14 +4,14 @@
     <title><%= title %></title>
     <meta charset="utf-8"/>
     <meta http-equiv="Access-Control-Allow-Origin" content="http://ggtest.gorgonor.com">
-    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='/ad/stylesheets/style.css'/>
 </head>
 <body>
 <input type="button" id="gg" value="跳转到高歌的界面" />
 <input type="button" id="myh" value="跳转到我的健康界面" />
 <textarea id="url" ></textarea>
-<script type="application/javascript" language="JavaScript" src="/javascripts/jquery.js"></script>
-<script type="application/javascript" language="JavaScript" src="/javascripts/jbase64.js"></script>
+<script type="application/javascript" language="JavaScript" src="/ad/javascripts/jquery.js"></script>
+<script type="application/javascript" language="JavaScript" src="/ad/javascripts/jbase64.js"></script>
 
 <script>
 
@@ -41,7 +41,7 @@
               var sex = '1';
               var gor_enstr = wapEncodePhone(appkey,'13567895432');
 
-            $('#url').val('http://111.200.225.242:4000/ggys?&sex='+sex+'&birthdat='+birthday+'&name='+name+'&gor_enstr='+gor_enstr);
+            $('#url').val('http://myh.lifesea.com/ad/ggys?&sex='+sex+'&birthday='+birthday+'&name='+name+'&gor_enstr='+gor_enstr);
         });
     });
 
