@@ -40,7 +40,7 @@
   <table align="center" width="90%" cellspace="0" cellpadding="0" border="0">
       <tr>
         <th>请求地址</th>
-        <td colspan="5"><input type="text" id='_uri' value="http://localhost:3001/ad/ggys" ></td>
+        <td colspan="5"><input type="text" id='_uri' value="http://myh.lifesea.com/ad/myh" ></td>
       </tr>
       <tr>
           <th>AppKey:</th>
@@ -140,12 +140,14 @@
          $('#sub').on('click',function(){
            //params.data = JSON.stringify(data);
            var params = dealSubData();
-           $.get(queryData._uri, params,function(data){
-                if(typeof data !='string'){
-                    data = JSON.stringify(data);
-                }
-                $('#resData').val(data);
-           });
+           window.open($('#postData').val(),"跳转页面");
+           return;
+           //$.get(queryData._uri, params,function(data){
+          //      if(typeof data !='string'){
+            //        data = JSON.stringify(data);
+          //      }
+          //      $('#resData').val(data);
+          // });
          });
          $('#getSubData').on('click',function(){
              var params = dealSubData();

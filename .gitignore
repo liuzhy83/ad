@@ -4,3 +4,5 @@ logs
 *.log_*
 config*
 package*
+*.zip
+*.DS_Store
