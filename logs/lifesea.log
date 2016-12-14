@@ -86,3 +86,195 @@
 [2016-11-17 08:58:20.541] [INFO] lifesea - Completed 200 (13ms)
 [2016-12-14 14:20:52.014] [ERROR] lifesea - connect to mongodb://lifesea:lifesea@127.0.0.1:27017/myhealth error:  failed to connect to server [127.0.0.1:27017] on first connect
 [2016-12-14 14:22:49.367] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 262ms
+[2016-12-14 14:38:32.552] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 160ms
+[2016-12-14 14:38:40.381] [INFO] lifesea - Started method:GET url:/ad ip:::1
+[2016-12-14 14:38:40.389] [INFO] lifesea - Completed 303 (8ms)
+[2016-12-14 14:38:40.395] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 14:38:40.408] [INFO] lifesea - Completed 200 (13ms)
+[2016-12-14 14:39:30.716] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 1160ms
+[2016-12-14 14:39:38.930] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 14:39:38.934] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/
+[2016-12-14 14:39:38.941] [INFO] lifesea - Completed 304 (11ms)
+[2016-12-14 14:39:39.350] [INFO] lifesea - Started method:GET url:/ad ip:::1
+[2016-12-14 14:39:39.357] [INFO] lifesea - Completed 303 (7ms)
+[2016-12-14 14:39:39.361] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 14:39:39.362] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/
+[2016-12-14 14:39:39.364] [INFO] lifesea - Completed 200 (3ms)
+[2016-12-14 14:40:40.528] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 1221ms
+[2016-12-14 14:40:44.754] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 14:40:44.762] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/
+[2016-12-14 14:40:44.779] [INFO] lifesea - Render view security (16ms)
+[2016-12-14 14:40:44.780] [INFO] lifesea - Completed 200 (27ms)
+[2016-12-14 14:40:44.792] [INFO] lifesea - Started method:GET url:/ad/jquery.js ip:::1
+[2016-12-14 14:40:44.796] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/jquery.js
+[2016-12-14 14:40:44.805] [INFO] lifesea - Completed 200 (13ms)
+[2016-12-14 14:40:44.806] [INFO] lifesea - Started method:GET url:/ad/crypto-js.js ip:::1
+[2016-12-14 14:40:44.807] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/crypto-js.js
+[2016-12-14 14:40:44.809] [INFO] lifesea - Completed 200 (3ms)
+[2016-12-14 14:42:12.668] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 14:42:12.670] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/
+[2016-12-14 14:42:12.672] [INFO] lifesea - Render view security (2ms)
+[2016-12-14 14:42:12.672] [INFO] lifesea - Completed 200 (4ms)
+[2016-12-14 14:42:12.674] [INFO] lifesea - Started method:GET url:/ad/jquery.js ip:::1
+[2016-12-14 14:42:12.675] [INFO] lifesea - Started method:GET url:/ad/crypto-js.js ip:::1
+[2016-12-14 14:42:12.677] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/jquery.js
+[2016-12-14 14:42:12.681] [INFO] lifesea - Completed 304 (7ms)
+[2016-12-14 14:42:12.681] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/crypto-js.js
+[2016-12-14 14:42:12.683] [INFO] lifesea - Completed 304 (8ms)
+[2016-12-14 14:42:12.687] [INFO] lifesea - Started method:GET url:/ad/jquery.js ip:::1
+[2016-12-14 14:42:12.687] [INFO] lifesea - Started method:GET url:/ad/crypto-js.js ip:::1
+[2016-12-14 14:42:12.688] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/jquery.js
+[2016-12-14 14:42:12.689] [INFO] lifesea - Completed 304 (2ms)
+[2016-12-14 14:42:12.691] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/crypto-js.js
+[2016-12-14 14:42:12.694] [INFO] lifesea - Completed 304 (7ms)
+[2016-12-14 14:42:36.082] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 324ms
+[2016-12-14 14:42:43.206] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 14:42:43.211] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/
+[2016-12-14 14:42:43.220] [INFO] lifesea - Render view security (8ms)
+[2016-12-14 14:42:43.221] [INFO] lifesea - Completed 200 (15ms)
+[2016-12-14 14:42:43.225] [INFO] lifesea - Started method:GET url:/ad/jquery.js ip:::1
+[2016-12-14 14:42:43.229] [INFO] lifesea - Started method:GET url:/ad/crypto-js.js ip:::1
+[2016-12-14 14:42:43.231] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/jquery.js
+[2016-12-14 14:42:43.236] [INFO] lifesea - Completed 304 (11ms)
+[2016-12-14 14:42:43.237] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/crypto-js.js
+[2016-12-14 14:42:43.239] [INFO] lifesea - Completed 304 (10ms)
+[2016-12-14 14:42:43.240] [INFO] lifesea - Started method:GET url:/ad/ad/javascripts/jquery.js ip:::1
+[2016-12-14 14:42:43.242] [INFO] lifesea - Started method:GET url:/ad/ad/javascripts/crypto-js.js ip:::1
+[2016-12-14 14:42:43.242] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/ad/javascripts/jquery.js
+[2016-12-14 14:42:43.244] [INFO] lifesea - Completed 200 (4ms)
+[2016-12-14 14:42:43.247] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/ad/javascripts/crypto-js.js
+[2016-12-14 14:42:43.253] [INFO] lifesea - Completed 200 (11ms)
+[2016-12-14 14:43:06.441] [INFO] lifesea - Started method:GET url:/ad ip:::1
+[2016-12-14 14:43:06.443] [INFO] lifesea - Completed 303 (2ms)
+[2016-12-14 14:43:06.472] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 14:43:06.475] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/
+[2016-12-14 14:43:06.477] [INFO] lifesea - Render view security (2ms)
+[2016-12-14 14:43:06.477] [INFO] lifesea - Completed 200 (5ms)
+[2016-12-14 14:43:06.514] [INFO] lifesea - Started method:GET url:/ad/ad/javascripts/jquery.js ip:::1
+[2016-12-14 14:43:06.516] [INFO] lifesea - Started method:GET url:/ad/ad/javascripts/crypto-js.js ip:::1
+[2016-12-14 14:43:06.517] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/ad/javascripts/jquery.js
+[2016-12-14 14:43:06.519] [INFO] lifesea - Completed 200 (5ms)
+[2016-12-14 14:43:06.520] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/ad/javascripts/crypto-js.js
+[2016-12-14 14:43:06.528] [INFO] lifesea - Completed 200 (12ms)
+[2016-12-14 14:43:06.576] [INFO] lifesea - Started method:GET url:/favicon.ico ip:::1
+[2016-12-14 14:43:06.576] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/favicon.ico
+[2016-12-14 14:43:06.578] [INFO] lifesea - Completed 200 (3ms)
+[2016-12-14 14:43:06.692] [INFO] lifesea - Started method:GET url:/favicon.ico ip:::1
+[2016-12-14 14:43:06.693] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/favicon.ico
+[2016-12-14 14:43:06.693] [INFO] lifesea - Completed 200 (1ms)
+[2016-12-14 14:43:27.597] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 14:43:27.598] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/
+[2016-12-14 14:43:27.600] [INFO] lifesea - Render view security (2ms)
+[2016-12-14 14:43:27.600] [INFO] lifesea - Completed 304 (3ms)
+[2016-12-14 14:43:27.689] [INFO] lifesea - Started method:GET url:/ad/ad/javascripts/jquery.js ip:::1
+[2016-12-14 14:43:27.691] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/ad/javascripts/jquery.js
+[2016-12-14 14:43:27.692] [INFO] lifesea - Completed 304 (3ms)
+[2016-12-14 14:43:27.695] [INFO] lifesea - Started method:GET url:/ad/ad/javascripts/crypto-js.js ip:::1
+[2016-12-14 14:43:27.698] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/ad/javascripts/crypto-js.js
+[2016-12-14 14:43:27.699] [INFO] lifesea - Completed 304 (4ms)
+[2016-12-14 14:45:15.538] [INFO] lifesea - Started method:GET url:/ad ip:::1
+[2016-12-14 14:45:15.539] [INFO] lifesea - Completed 303 (1ms)
+[2016-12-14 14:45:15.565] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 14:45:15.566] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/
+[2016-12-14 14:45:15.567] [INFO] lifesea - Render view security (1ms)
+[2016-12-14 14:45:15.567] [INFO] lifesea - Completed 304 (2ms)
+[2016-12-14 14:45:15.634] [INFO] lifesea - Started method:GET url:/ad/ad/javascripts/jquery.js ip:::1
+[2016-12-14 14:45:15.635] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/ad/javascripts/jquery.js
+[2016-12-14 14:45:15.635] [INFO] lifesea - Completed 304 (1ms)
+[2016-12-14 14:45:15.637] [INFO] lifesea - Started method:GET url:/ad/ad/javascripts/crypto-js.js ip:::1
+[2016-12-14 14:45:15.637] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/ad/javascripts/crypto-js.js
+[2016-12-14 14:45:15.639] [INFO] lifesea - Completed 304 (1ms)
+[2016-12-14 14:46:13.295] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 223ms
+[2016-12-14 14:46:42.547] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 14:46:42.552] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/
+[2016-12-14 14:46:42.569] [INFO] lifesea - Render view security (15ms)
+[2016-12-14 14:46:42.571] [INFO] lifesea - Completed 200 (23ms)
+[2016-12-14 14:46:42.661] [INFO] lifesea - Started method:GET url:/ad/public/ad/javascripts/jquery.js ip:::1
+[2016-12-14 14:46:42.663] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/public/ad/javascripts/jquery.js
+[2016-12-14 14:46:42.671] [INFO] lifesea - Completed 200 (11ms)
+[2016-12-14 14:46:42.674] [INFO] lifesea - Started method:GET url:/ad/public/ad/javascripts/crypto-js.js ip:::1
+[2016-12-14 14:46:42.674] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/public/ad/javascripts/crypto-js.js
+[2016-12-14 14:46:42.676] [INFO] lifesea - Completed 200 (3ms)
+[2016-12-14 14:48:21.672] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 283ms
+[2016-12-14 14:48:26.702] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 14:48:26.707] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/
+[2016-12-14 14:48:26.722] [INFO] lifesea - Render view security (15ms)
+[2016-12-14 14:48:26.726] [INFO] lifesea - Completed 200 (24ms)
+[2016-12-14 14:48:26.843] [INFO] lifesea - Started method:GET url:/ad/javascripts/jquery.js ip:::1
+[2016-12-14 14:48:26.850] [INFO] lifesea - Started method:GET url:/ad/javascripts/crypto-js.js ip:::1
+[2016-12-14 14:48:26.852] [DEBUG] lifesea - $$$$$$$$$$$$$>>>>/ad/javascripts/crypto-js.js
+[2016-12-14 14:48:26.861] [INFO] lifesea - Completed 200 (11ms)
+[2016-12-14 14:48:26.869] [INFO] lifesea - Completed 200 (26ms)
+[2016-12-14 14:55:36.917] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 303ms
+[2016-12-14 14:55:45.397] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 14:55:45.413] [INFO] lifesea - Render view security (10ms)
+[2016-12-14 14:55:45.421] [INFO] lifesea - Completed 304 (25ms)
+[2016-12-14 14:55:45.554] [INFO] lifesea - Started method:GET url:/ad/javascripts/jquery.js ip:::1
+[2016-12-14 14:55:45.561] [INFO] lifesea - Completed 304 (7ms)
+[2016-12-14 14:55:45.563] [INFO] lifesea - Started method:GET url:/ad/javascripts/crypto-js.js ip:::1
+[2016-12-14 14:57:23.457] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 1713ms
+[2016-12-14 14:57:36.237] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 14:57:36.250] [INFO] lifesea - Render view security (8ms)
+[2016-12-14 14:57:36.251] [INFO] lifesea - Completed 304 (14ms)
+[2016-12-14 14:57:36.331] [INFO] lifesea - Started method:GET url:/ad/javascripts/jquery.js ip:::1
+[2016-12-14 14:57:36.337] [INFO] lifesea - Completed 304 (6ms)
+[2016-12-14 14:57:36.338] [INFO] lifesea - Started method:GET url:/ad/javascripts/crypto-js.js ip:::1
+[2016-12-14 14:57:36.346] [INFO] lifesea - Render view error (6ms)
+[2016-12-14 14:57:36.352] [INFO] lifesea - Completed 404 (14ms)
+[2016-12-14 14:57:36.458] [INFO] lifesea - Started method:GET url:/ad/javascripts/crypto-js.js ip:::1
+[2016-12-14 14:57:36.460] [INFO] lifesea - Render view error (1ms)
+[2016-12-14 14:57:36.462] [INFO] lifesea - Completed 404 (4ms)
+[2016-12-14 14:58:38.578] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 1325ms
+[2016-12-14 14:58:46.216] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 14:58:46.233] [INFO] lifesea - Render view security (12ms)
+[2016-12-14 14:58:46.237] [INFO] lifesea - Completed 200 (21ms)
+[2016-12-14 14:58:46.321] [INFO] lifesea - Started method:GET url:/ad/javascripts/security/jquery.js ip:::1
+[2016-12-14 14:58:46.331] [INFO] lifesea - Started method:GET url:/ad/javascripts/security/crypto-js.js ip:::1
+[2016-12-14 14:58:46.357] [INFO] lifesea - Completed 200 (36ms)
+[2016-12-14 14:58:46.363] [INFO] lifesea - Completed 200 (33ms)
+[2016-12-14 15:03:18.302] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 324ms
+[2016-12-14 15:03:23.908] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 15:03:23.929] [INFO] lifesea - Render view security (13ms)
+[2016-12-14 15:03:23.930] [INFO] lifesea - Completed 200 (22ms)
+[2016-12-14 15:03:24.005] [INFO] lifesea - Started method:GET url:/ad/javascripts/security/jquery.js ip:::1
+[2016-12-14 15:03:24.016] [INFO] lifesea - Started method:GET url:/ad/javascripts/security/crypto-js.js ip:::1
+[2016-12-14 15:03:24.034] [INFO] lifesea - Completed 304 (30ms)
+[2016-12-14 15:03:24.038] [INFO] lifesea - Completed 304 (22ms)
+[2016-12-14 15:05:53.746] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 316ms
+[2016-12-14 15:05:57.211] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 15:05:57.225] [INFO] lifesea - Render view security (8ms)
+[2016-12-14 15:05:57.229] [INFO] lifesea - Completed 200 (19ms)
+[2016-12-14 15:05:57.293] [INFO] lifesea - Started method:GET url:/ad/javascripts/security/jquery.js ip:::1
+[2016-12-14 15:05:57.301] [INFO] lifesea - Started method:GET url:/ad/javascripts/security/crypto-js.js ip:::1
+[2016-12-14 15:05:57.306] [INFO] lifesea - Completed 304 (13ms)
+[2016-12-14 15:05:57.308] [INFO] lifesea - Completed 304 (9ms)
+[2016-12-14 15:06:36.836] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 435ms
+[2016-12-14 15:06:40.732] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 15:06:40.745] [INFO] lifesea - Render view security (8ms)
+[2016-12-14 15:06:40.746] [INFO] lifesea - Completed 200 (15ms)
+[2016-12-14 15:06:40.822] [INFO] lifesea - Started method:GET url:/ad/javascripts/security/jquery.js ip:::1
+[2016-12-14 15:06:40.829] [INFO] lifesea - Completed 304 (7ms)
+[2016-12-14 15:06:40.831] [INFO] lifesea - Started method:GET url:/ad/javascripts/security/crypto-js.js ip:::1
+[2016-12-14 15:06:40.833] [INFO] lifesea - Completed 304 (2ms)
+[2016-12-14 15:07:03.959] [INFO] lifesea - Started method:GET url:/ad/ggys/eduLists?appkey=531ab9a0ac8f11e68ab58ba03d062ad4&timestamp=1481699202794&name=%2525E5%2525BC%2525A0%2525E4%2525B8%252589&userid=zhangshan&provinces=%2525E5%2525B9%2525BF%2525E4%2525B8%25259C&sign=PgNZkAlugWB%2F8av5Bl5csLFoxhsMRGRN0sIr5OielzwneADiIKTUclyJC7HUD4Q5rs45Zs6xlovKLNralS5Hf6jSFCl9o6qnjaZCY3gH9tgD3l0c0Qk0FA%3D%3D ip:::1
+[2016-12-14 15:07:03.991] [INFO] lifesea - Completed 302 (32ms)
+[2016-12-14 15:12:17.561] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 8558ms
+[2016-12-14 15:12:21.816] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 15:12:21.830] [INFO] lifesea - Render view security (9ms)
+[2016-12-14 15:12:21.831] [INFO] lifesea - Completed 200 (15ms)
+[2016-12-14 15:12:21.908] [INFO] lifesea - Started method:GET url:/ad/javascripts/security/jquery.js ip:::1
+[2016-12-14 15:12:21.913] [INFO] lifesea - Completed 304 (5ms)
+[2016-12-14 15:12:21.918] [INFO] lifesea - Started method:GET url:/ad/javascripts/security/crypto-js.js ip:::1
+[2016-12-14 15:12:21.922] [INFO] lifesea - Completed 304 (4ms)
+[2016-12-14 15:12:47.641] [INFO] lifesea - Started method:GET url:/ad/ggys/eduLists?appkey=531ab9a0ac8f11e68ab58ba03d062ad4&timestamp=1481699550430&name=%2525E5%2525BC%2525A0%2525E4%2525B8%252589&userid=zhangshan&provinces=%2525E5%25258C%252597%2525E4%2525BA%2525AC&sign=PgNZkAlugWB%2F8av5Bl5csLFoxhsMRGRN0sIr5OielzwneADiIKTUcpXQNWMKdueSrs45Zs6xlovKLNralS5Hf6jSFCl9o6qn13hK9O6IBpvK5j3P2FNvJw%3D%3D ip:::1
+[2016-12-14 15:12:47.671] [INFO] lifesea - Completed 302 (30ms)
+[2016-12-14 15:15:31.180] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 271ms
+[2016-12-14 15:15:34.159] [INFO] lifesea - Started method:GET url:/ad/ ip:::1
+[2016-12-14 15:15:34.173] [INFO] lifesea - Render view security (8ms)
+[2016-12-14 15:15:34.183] [INFO] lifesea - Completed 200 (25ms)
+[2016-12-14 15:15:34.262] [INFO] lifesea - Started method:GET url:/ad/javascripts/security/jquery.js ip:::1
+[2016-12-14 15:15:34.274] [INFO] lifesea - Completed 304 (13ms)
+[2016-12-14 15:15:34.278] [INFO] lifesea - Started method:GET url:/ad/javascripts/security/crypto-js.js ip:::1
+[2016-12-14 15:15:34.280] [INFO] lifesea - Completed 304 (2ms)
+[2016-12-14 15:16:59.811] [INFO] lifesea - Started method:GET url:/ad/ggys/eduLists?appkey=531ab9a0ac8f11e68ab58ba03d062ad4&timestamp=1481699738987&name=%2525E5%2525BC%2525A0%2525E4%2525B8%252589&userid=zhangshan&provinces=%2525E5%25258C%252597%2525E4%2525BA%2525AC&sign=PgNZkAlugWB%2F8av5Bl5csLFoxhsMRGRN0sIr5OielzwneADiIKTUctyc2tAMN8qhrs45Zs6xlovKLNralS5Hf6jSFCl9o6qn4os9ofgrhkKOnw5jw%2Bur9w%3D%3D ip:::1
+[2016-12-14 15:16:59.832] [INFO] lifesea - Completed 302 (21ms)

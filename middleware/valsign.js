@@ -24,6 +24,13 @@ var findFirmsSecret = function(appkey){
       }
 };
 exports = module.exports = function (req, res, next) {
+    if(_.endsWith(req.path,".js")||_.endsWith(req.path,".css")||_.endsWith(req.path,".png")){
+         next();
+    }
+    if(req.path==="/ad/"){
+        res.render("security",{});
+        return;
+    }
     var appkey = req.query.appkey;
     var sign = req.query.sign;
     var timestamp = req.query.timestamp;
