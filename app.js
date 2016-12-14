@@ -4,7 +4,7 @@ var express = require('express');
 process.env.PORT=config.server.port;
 var app = express();
 var logger = require('./common/logger');
-logger.use(app);
+//logger.use(app);
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');

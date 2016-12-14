@@ -84,3 +84,5 @@
 [2016-11-17 08:58:20.540] [INFO] lifesea - Completed 200 (11ms)
 [2016-11-17 08:58:20.541] [DEBUG] lifesea - GET /ad/images/bg4.png
 [2016-11-17 08:58:20.541] [INFO] lifesea - Completed 200 (13ms)
+[2016-12-14 14:20:52.014] [ERROR] lifesea - connect to mongodb://lifesea:lifesea@127.0.0.1:27017/myhealth error:  failed to connect to server [127.0.0.1:27017] on first connect
+[2016-12-14 14:22:49.367] [DEBUG] lifesea - MONGO identitycounters.findOne {"conditions":{"field":"xh","model":"LinkedLog"},"options":{},"collectionName":"identitycounters"} 262ms

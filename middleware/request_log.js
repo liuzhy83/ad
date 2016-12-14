@@ -1,4 +1,4 @@
-var logger = require('../common/logger').logger;
+var logger = require('../common/logger');
 require('colors');
 
 exports = module.exports = function (req, res, next) {

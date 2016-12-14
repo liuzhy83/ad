@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var logger   = require('../common/logger').logger;
+var logger   = require('../common/logger');
 var config = require('../config');
 
 if (config.mongodb.loglevel=='DEBUG') {
